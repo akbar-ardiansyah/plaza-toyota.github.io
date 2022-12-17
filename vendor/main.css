@@ -35,8 +35,7 @@
 }
 
 .mt-50 {
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin-top: 5rem !important;
 }
 
 :root {
@@ -59,7 +58,7 @@
 }
 
 .bg-secondary {
-    background: var(--my-secondary);
+    background: #363636 !important;
 }
 
 .btn-transparent {
@@ -73,6 +72,113 @@
     color: #212529;
     padding: 6px 20px;
     background: #fff;
+}
+
+.bg-dark {
+    background: #000000 !important;
+}
+
+.bg-white-50 {
+    background: #f4f4f4;
+}
+
+.font-family-promp-regular_semi_bold {
+    font-family: 'Prompt_SemiBold';
+}
+
+.font-family-promp-regular_bold {
+    font-family: 'Prompt_Bold';
+}
+
+.font-family-promp-regular {
+    font-family: 'Prompt_Regular';
+}
+
+.border-none {
+    border: none !important;
+    border-right: none !important;
+}
+
+li.min-width-70 {
+    min-width: 100px !important;
+    align-items: center;
+}
+
+li.min-width-70:hover {
+    background: gray;
+}
+
+.fz-x-small {
+    font-size: 12px
+}
+
+.fz-25 {
+    font-size: 25px;
+}
+
+.mt-6 {
+    margin-top: 65px !important;
+}
+
+.hero-bg {
+    background-image: url('https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/banner/top_banner_gallery.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.w-30 {
+    height: 30vh;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    /* display: none; */
+    background: rgba(255, 255, 255, 0.103);
+    width: 5px;
+    height: 1px;
+}
+
+
+::-webkit-scrollbar-track {
+    display: none;
+    visibility: hidden;
+    /* background: var(--my-danger); */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--my-danger);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
+
+.car-img {
+    width: 146px !important;
+    height: 101px !important;
+    object-fit: contain !important;
+}
+
+.car-link {
+    text-decoration: none;
+    color: #e53232;
+}
+
+.footer-wrap,
+.car-catalog {
+    padding: 0 120px;
+}
+
+.car-catalog h4 {
+    font-size: 18px;
+    font-family: 'Prompt_SemiBold';
 }
 
 /*************************************
@@ -226,6 +332,7 @@
 
 .site-mobile-menu {
     width: 100%;
+    height: 100vh;
     position: fixed;
     right: 0;
     z-index: 2000;
@@ -692,6 +799,69 @@
 }
 
 /*************************************
+# FOOTER
+**************************************/
+li.footer a {
+    text-decoration: none;
+    align-items: center;
+    color: aliceblue;
+    margin: auto auto;
+
+}
+
+li.footer i {
+    align-items: center;
+    font-size: 25px;
+}
+
+li.footer {
+    list-style: none;
+    margin-right: 19px;
+    align-items: center;
+    font-size: 12px;
+}
+
+ul.footer {
+    display: flex;
+    align-items: center;
+    margin-left: 0 !important;
+    padding: 0 !important;
+}
+
+li.footer img {
+    width: 140px;
+}
+
+.icon-wrap {
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.fa-instagram {
+    background: linear-gradient(160deg, rgb(68, 0, 255), red, rgb(255, 242, 0));
+}
+
+.fa-facebook {
+    background: linear-gradient(160deg, rgb(82, 52, 166), rgb(20, 95, 152), rgb(199, 187, 187));
+}
+
+.fa-twitter {
+    background: linear-gradient(160deg, rgb(0, 136, 255), rgb(3, 104, 193));
+}
+
+.floating-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999999;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 60%);
+    border-radius: 20px;
+}
+
+/*************************************
 # LOGO
 **************************************/
 .logo img {
@@ -740,19 +910,11 @@
     padding: 0;
 }
 
-.carousel-control-prev.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
-}
-
-.carousel-control-next.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
-}
-
-span.carousel-control-prev-icon,
+/* span.carousel-control-prev-icon,
 span.carousel-control-next-icon {
     background: #ffffff;
     border-radius: 50%;
-}
+} */
 
 
 .carousel-indicators button {
@@ -766,10 +928,93 @@ span.carousel-control-next-icon {
 }
 
 /*************************************
+# slider
+**************************************/
+ul.scroll {
+    display: flex;
+
+}
+
+.scroll {
+    width: 1000px;
+    overflow-x: scroll;
+}
+
+.scroll li {
+    list-style: none;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    margin: 0 18px;
+    min-width: 140px;
+    border-right: 1px solid #ccc;
+}
+
+.scroll>li>a {
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Prompt_Regular';
+    align-self: center;
+    font-size: 12px;
+    color: #212529;
+}
+
+li {
+    align-items: center;
+    vertical-align: middle;
+}
+
+ul.scroll-x {
+    display: flex;
+
+}
+
+.scroll-x {
+    width: 1000px;
+    overflow-x: scroll;
+}
+
+.scroll-x li {
+    list-style: none;
+    align-self: center;
+    align-items: center;
+    min-width: 140px;
+    border-right: 1px solid #ccc;
+}
+
+.scroll-x>li>a {
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Prompt_Regular';
+    align-self: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+li.li-item.active {
+    background: #3d3d3d;
+    padding: 10px;
+}
+
+li.li-item:hover {
+    background: #3d3d3d;
+    padding: 10px;
+}
+
+/*************************************
+# vehicles-model
+**************************************/
+.vehicles-model {
+    font-family: 'Prompt_Bold';
+    padding: 40px 0 10px;
+}
+
+/*************************************
 # CONTACT INFORMATION
 **************************************/
 .contact-information {
-    background-color: #000000;
     min-height: 50px;
     font-family: 'Prompt_SemiBold';
     color: #fff;
@@ -791,6 +1036,28 @@ span.carousel-control-next-icon {
 
     .closed {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .footer-wrap,
+    .car-catalog {
+        padding: 0 25px;
+    }
+
+    .mt-6 {
+        margin-top: 75px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .car-catalog {
+        padding: 0 18px;
+    }
+
+    .car-catalog h4 {
+        font-size: 16px;
     }
 }
 
@@ -818,7 +1085,6 @@ span.carousel-control-next-icon {
         margin-left: auto;
         align-self: center;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -835,6 +1101,11 @@ span.carousel-control-next-icon {
         margin-left: auto;
         align-self: center;
     }
+
+    .w-100 {
+        height: 80vh !important;
+        object-fit: cover !important;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -842,5 +1113,10 @@ span.carousel-control-next-icon {
         width: fit-content;
         margin: 0;
         display: flex;
+    }
+
+    .w-100 {
+        height: 85vh !important;
+        object-fit: cover !important;
     }
 }

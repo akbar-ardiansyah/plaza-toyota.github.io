@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- bootstrap CSS -->
     <link rel="stylesheet" href="vendor/bootstrap-5.2.2/dist/css/bootstrap.min.css">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="vendor/main.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -146,8 +149,8 @@
                             </li>
                             <li><a href="#" class="nav-link">Corporate Information</a></li>
                             <li><a href="#" class="nav-link">After Sales</a></li>
-                            <li><a href="#" class="nav-link">Gallery</a></li>
-                            <li><a href="#" class="nav-link">About Us</a></li>
+                            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                            <li><a href="about-us.html" class="nav-link">About Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -161,12 +164,17 @@
         </div>
     </header>
     <!-- END NAVBAR -->
-    <main>
+
+    <!-- BEGIN HERO -->
+    <main class="mt-5">
         <!-- BEGIN CAROUSEL -->
-        <div class="wrapper mt-50">
+        <div class="wrapper">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="position-absolute start-50 translate-middle" style="z-index: 10; top: 80%;">
-                    <button class="btn btn-transparent rounded-pill" role="button">Explore More</button>
+                    <button class="btn btn-transparent rounded-pill" role="button">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        Explore More
+                    </button>
                 </div>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -182,7 +190,6 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
                         aria-label="Slide 6"></button>
                 </div>
-
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/img/1.jpg" class="d-block w-100" alt="1.jpg">
@@ -217,31 +224,476 @@
             <!-- END CAROUSEL -->
         </div>
         <!-- BEGIN CONTACT INFORMATION -->
-        <div class="contact-information">
-            <div class="text-center mb-2">Contact & Booking</div>
+        <div class="contact-information bg-dark">
+            <div class="text-center mb-2"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Contact & Booking</div>
             <div class="text-center">
-                <a href="#" class="badge rounded-pill bg-primary p-2">0812312323123</a>
-                <a href="#" class="badge rounded-pill bg-success p-2">0812312323123</a>
-                <a href="#" class="badge rounded-pill bg-secondary p-2">0812312323123</a>
+                <a href="#" class="badge rounded-pill bg-primary p-2">
+                    <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp;0812312323123</a>
+                <a href="#" class="badge rounded-pill bg-success p-2"><i class="fa fa-whatsapp"
+                        aria-hidden="true"></i>&nbsp;0812312323123</a>
+                <a href="#" class="badge rounded-pill bg-secondary p-2">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Find Dealer</a>
             </div>
         </div>
         <!-- END CONTACT INFORMATION -->
     </main>
-
-    <!-- <div style="margin-top: 500px;margin-bottom: 1200px;">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam totam facere amet obcaecati cum libero
-        omnis saepe magni aut. Laboriosam voluptatibus odit sed, a itaque quod temporibus cupiditate ipsum et rem? Esse,
-        excepturi cumque quisquam minima debitis tempora voluptate repudiandae blanditiis nihil id aspernatur
-        consequuntur perspiciatis non obcaecati animi beatae reprehenderit nam laudantium. Voluptates nihil numquam
-        excepturi debitis adipisci eveniet perferendis totam ex alias, possimus molestias voluptatem vitae architecto
-        vero repudiandae earum quidem corrupti, minus fugiat, dolore veritatis voluptas? Provident quos quae omnis
-        numquam soluta labore dolore exercitationem perspiciatis, reprehenderit iste molestias itaque! Reprehenderit,
-        optio numquam! Cumque, debitis animi.
-    </div> -->
-    <!-- BEGIN HERO -->
     <!-- END HERO -->
+    <div class="row justify-content-center nav-justified">
+        <ul class="p-5 ml-auto mr-auto scroll">
+            <li>
+                <a href="#" target="_blank">
+                    <div>
+                        <img src="https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/assets/icon_konsultasi_pembelian.png"
+                            title="Konsultasi Pembelian" class="img-fluid">
+                    </div>
+                    <div>Konsultasi Pembelian</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.plazatoyota.co.id/dealer-pricelist">
+                    <div>
+                        <img src="https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/assets/icon_dealer_pricelist.png"
+                            title="Dealer Pricelist" class="img-fluid">
+                    </div>
+                    <div>Dealer Pricelist</div>
+                </a>
+            </li>
+            <li>
+                <a rel="nofollow" href="https://www.plazatoyota.co.id/booking-service" target="_blank">
+                    <div>
+                        <img src="https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/assets/icon_booking_service.png"
+                            title="Booking Service" class="img-fluid">
+                    </div>
+                    <div>Booking Service</div>
+                </a>
+            </li>
+            <li>
+                <a rel="nofollow" href="https://www.plazatoyota.co.id/credit-simulation">
+                    <div>
+                        <img src="https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/assets/icon_credit_simulation.png"
+                            title="Credit Simulation" class="img-fluid">
+                    </div>
+                    <div>Credit Simulation</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.plazatoyota.co.id/find-dealer">
+                    <div>
+                        <img src="https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/assets/icon_find_dealer.png"
+                            title="Find Dealer" class="img-fluid">
+                    </div>
+                    <div>Find Branches</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.plazatoyota.co.id/promo">
+                    <div>
+                        <img src="https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/assets/icon_dealer_promo.png"
+                            title="Dealer Promo" class="img-fluid">
+                    </div>
+                    <div>Dealer Promo</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- BEGIN CONTENT -->
+    <section class="vehicles-model bg-white-50">
+        <div class="container">
+            <h3 class="ml-lg-5 car-catalog">Vehicles Model</h3>
+        </div>
+        <div class="bg-dark p-3 text-white font-family-promp-regular">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <ul class="scroll-x m-0 text-center">
+                        <li class="li-item border-none min-width-70 active">
+                            <a href="#">SUV</a>
+                        </li>
+                        <li class="li-item border-none min-width-70">
+                            <a href="#">Sedan</a>
+                        </li>
+                        <li class="li-item border-none min-width-70">
+                            <a href="#">Hatcback</a>
+                        </li>
+                        <li class="li-item border-none min-width-70">
+                            <a href="#">MPV</a>
+                        </li>
+                        <li class="li-item border-none min-width-70">
+                            <a href="#">Comercial</a>
+                        </li>
+                        <li class="li-item border-none min-width-70"><a href="#">Sport</a>
+                        </li>
+                        <li class="li-item border-none min-width-70">
+                            <a href="#">Elextrified</a>
+                        </li>
+                        <li class="border-none min-width-70">
+                            <a href="#"><img src="assets/img/gr_small.png" class="img-fluid" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-5 car-catalog">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-3 col-6 mb-5">
+                <div class="car-image">
+                    <img src="https://static.rajamobil.com/resize/146x91/media/images/databasemobil/mobilbaru/color/1637307773-Red-Mica-Metallic.png"
+                        alt="Toyota All New Corolla Cross " title="Toyota All New Corolla Cross "
+                        class="img-fluid car-img">
+                </div>
+                <div class="font-family-promp-regular">
+                    <h4 class="font-family-promp-bold">All New Corolla Cross </h4>
+                    <small class="fz-x-small">Starting at</small>
+                    <h4 class="font-family-promp-bold">IDR. 540.900.000</h4>
+                    <hr>
+                    <a href="#" class="car-link">
+                        Explore
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
 
 
+            <div class="col-lg-3 col-6 mb-5">
+                <div class="car-image">
+                    <img src="https://static.rajamobil.com/resize/146x91/media/images/databasemobil/mobilbaru/color/1642156294-Precious_White.png"
+                        alt="Toyota All New Land Cruiser" title="Toyota All New Land Cruiser" class="img-fluid car-img">
+                </div>
+                <div class="font-family-promp-regular">
+                    <h4 class="font-family-promp-bold">All New Land Cruiser</h4>
+                    <small class="fz-x-small">Starting at</small>
+                    <h4 class="font-family-promp-bold">IDR. 2.418.400.000</h4>
+                    <hr>
+                    <a href="#" class="car-link">
+                        Explore
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-6 mb-5">
+                <div class="car-image">
+                    <img src="https://static.rajamobil.com/resize/146x91/media/images/databasemobil/mobilbaru/color/1629794482-Turquoise-MM-Black-[BADGE].png"
+                        alt="Toyota All New Raize" title="Toyota All New Raize" class="img-fluid car-img">
+                </div>
+                <div class="font-family-promp-regular">
+                    <h4 class="font-family-promp-bold">All New Raize</h4>
+                    <small class="fz-x-small">Starting at</small>
+                    <h4 class="font-family-promp-bold">IDR. 251.900.000</h4>
+                    <hr>
+                    <a href="#" class="car-link">
+                        Explore
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-6 mb-5">
+                <div class="car-image">
+                    <img src="https://static.rajamobil.com/resize/146x91/media/images/databasemobil/mobilbaru/color/1629794482-Turquoise-MM-Black-[BADGE].png"
+                        alt="Toyota All New Raize GR Sport" title="Toyota All New Raize GR Sport"
+                        class="img-fluid car-img">
+                </div>
+                <div class="font-family-promp-regular">
+                    <h4 class="font-family-promp-bold">All New Raize GR Sport</h4>
+                    <small class="fz-x-small">Starting at</small>
+                    <h4 class="font-family-promp-bold">IDR. 280.800.000</h4>
+                    <hr>
+                    <a href="#" class="car-link">
+                        Explore
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-6 mb-5">
+                <div class="car-image">
+                    <img src="https://static.rajamobil.com/resize/146x91/media/images/databasemobil/mobilbaru/color/1657705867-Attitude_Black.png"
+                        alt="Toyota New Fortuner" title="Toyota New Fortuner" class="img-fluid car-img">
+                </div>
+                <div class="font-family-promp-regular">
+                    <h4 class="font-family-promp-bold">New Fortuner</h4>
+                    <small class="fz-x-small">Starting at</small>
+                    <h4 class="font-family-promp-bold">IDR. 606.200.000</h4>
+                    <hr>
+                    <a href="#" class="car-link">
+                        Explore
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-6 mb-5">
+                <div class="car-image">
+                    <img src="https://static.rajamobil.com/resize/146x91/media/images/databasemobil/mobilbaru/color/toyota-new-rush-white.png"
+                        alt="Toyota New Rush" title="Toyota New Rush" class="img-fluid car-img">
+                </div>
+                <div class="font-family-promp-regular">
+                    <h4 class="font-family-promp-bold">New Rush</h4>
+                    <small class="fz-x-small">Starting at</small>
+                    <h4 class="font-family-promp-bold">IDR. 278.800.000</h4>
+                    <hr>
+                    <a href="#" class="car-link">
+                        Explore
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN CAROUSEL -->
+    <div class="bg-white-50">
+        <div class="container p-5 mt-5">
+            <h3 class="ml-lg-5 car-catalog font-family-promp-regular_bold mb-2">Dealer Promo</h3>
+            <div id="carouselExampleCaptions" class="carousel slide car-catalog" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- carousel item riding -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-9">
+                                <img src="https://rajamobil.s3.ap-southeast-1.amazonaws.com/newtpm/promo_ho/3f0e415d70629b0efc6d02cb13571fbe.jpg"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col">
+                                <small>11/07/2022</small>
+                                <p class="font-family-promp-regular_semi_bold">Berkendara Aman &amp; Nyaman dengan Rutin
+                                    Servis
+                                    Berkala</p>
+                                <button class="btn btn-transparent text-dark rounded-pill" role="button">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-9">
+                                <img src="https://rajamobil.s3.ap-southeast-1.amazonaws.com/newtpm/promo_ho/3f0e415d70629b0efc6d02cb13571fbe.jpg"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col">
+                                <small>11/07/2022</small>
+                                <p class="font-family-promp-regular_semi_bold">Berkendara Aman &amp; Nyaman dengan Rutin
+                                    Servis
+                                    Berkala</p>
+                                <button class="btn btn-transparent text-dark rounded-pill" role="button">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-9">
+                                <img src="https://rajamobil.s3.ap-southeast-1.amazonaws.com/newtpm/promo_ho/3f0e415d70629b0efc6d02cb13571fbe.jpg"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col">
+                                <small>11/07/2022</small>
+                                <p class="font-family-promp-regular_semi_bold">Berkendara Aman &amp; Nyaman dengan Rutin
+                                    Servis
+                                    Berkala</p>
+                                <button class="btn btn-transparent text-dark rounded-pill" role="button">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    Explore More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item riding -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SECOND CAROUSEL -->
+    <div>
+        <div class="container p-5 mt-5">
+            <h3 class="ml-lg-5 car-catalog font-family-promp-regular_bold mb-2">News & Event</h3>
+            <div id="carouselExampleCaptions" class="carousel slide car-catalog" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- carousel item riding -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <small>11/07/2022</small>
+                                <p class="font-family-promp-regular_semi_bold">Deal Cermat adalah solusi terbaru
+                                    kendaraan dengan cicilan sangat ringan, jaminan harga jual kembali dan fleksibilitas
+                                    untuk memperbaharui kendaraan Anda.</p>
+                                <button class="btn btn-transparent text-dark rounded-pill" role="button">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    Explore More
+                                </button>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <img src="https://rajamobil.s3.ap-southeast-1.amazonaws.com/newtpm/promo_ho/3f111a7615d6c6aefecef73efd2893b9.jpg"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <small>11/07/2022</small>
+                                <p class="font-family-promp-regular_semi_bold">Deal Cermat adalah solusi terbaru
+                                    kendaraan dengan cicilan sangat ringan, jaminan harga jual kembali dan fleksibilitas
+                                    untuk memperbaharui kendaraan Anda.</p>
+                                <button class="btn btn-transparent text-dark rounded-pill" role="button">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    Explore More
+                                </button>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <img src="https://rajamobil.s3.ap-southeast-1.amazonaws.com/newtpm/promo_ho/3f111a7615d6c6aefecef73efd2893b9.jpg"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <small>11/07/2022</small>
+                                <p class="font-family-promp-regular_semi_bold">Deal Cermat adalah solusi terbaru
+                                    kendaraan dengan cicilan sangat ringan, jaminan harga jual kembali dan fleksibilitas
+                                    untuk memperbaharui kendaraan Anda.</p>
+                                <button class="btn btn-transparent text-dark rounded-pill" role="button">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    Explore More
+                                </button>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <img src="https://rajamobil.s3.ap-southeast-1.amazonaws.com/newtpm/promo_ho/3f111a7615d6c6aefecef73efd2893b9.jpg"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item riding -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- END CONTENT -->
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-secondary">
+        <div class="container footer-wrap text-white">
+            <div class="row">
+                <div class="col-12 col-lg-4 pt-3 pb-2">
+                    <h6 class="font-family-promp-regular_bold">Contact Us</h6>
+                    <strong class="font-family-promp-regular_semi_bold">Plaza Toyota</strong><br>
+                    <small class="font-family-promp-regular fz-x-small">
+                        Jl. Kapten Tendean No.9A, RT.1/RW.2, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta Selatan,
+                        Daerah
+                        Khusus Ibukota Jakarta 12710, Indonesia</small>
+                </div>
+                <div class="col-12 col-lg-6 my-auto">
+                    <a href="#" class="btn btn-transparent rounded-pill pt-1 pb-1 fz-x-small fw-bold">
+                        <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp;0812312323123
+                    </a>
+                    <a href="#" class="btn btn-transparent rounded-pill pt-1 pb-1 fz-x-small fw-bold">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;0812312323123</a>
+                    <a href="#" class="btn btn-transparent rounded-pill pt-1 pb-1 fz-x-small fw-bold">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Find Dealer
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark">
+            <div class="container footer-wrap text-white pt-2 pb-2">
+                <div class="row">
+                    <ul class="footer">
+                        <li class="footer icon">
+                            <a href="#"><i class="fa fa-facebook icon-wrap" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="footer icon">
+                            <a href="#"><i class="fa fa-instagram icon-wrap" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="footer icon">
+                            <a href="#"><i class="fa fa-twitter icon-wrap" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="footer icon">
+                            <a href="#"><img src=" assets/halo-toyota.png" alt="halo toyota"></a>
+                        </li>
+                    </ul>
+                    <div class="col font-family-promp-regular">
+                        <ul style="margin-left: 0 !important; padding: 0 !important;">
+                            <li class="footer font-family-promp-regular_bold">Shoping Tools</li>
+                            <li class="footer text-white-50">Dealer Pricelist</li>
+                            <li class="footer text-white-50">Credit Simulation</li>
+                            <li class="footer text-white-50">Booking Service</li>
+                        </ul>
+                    </div>
+                    <div class="col font-family-promp-regular">
+                        <ul style="margin-left: 0 !important; padding: 0 !important;">
+                            <li class="footer text-white-50">&nbsp;</li>
+                            <li class="footer text-white-50">Find Branches</li>
+                            <li class="footer text-white-50">Konsultasi Pembelian</li>
+                            <li class="footer text-white-50">Dealer Promo</li>
+                        </ul>
+                    </div>
+                    <div class="col font-family-promp-regular">
+                        <ul style="margin-left: 0 !important; padding: 0 !important;">
+                            <li class="footer font-family-promp-regular_bold">Dealer Identity</li>
+                            <li class="footer text-white-50">About Us</li>
+                            <li class="footer text-white-50">After Sales</li>
+                            <li class="footer text-white-50">Gallery</li>
+                        </ul>
+                    </div>
+                    <div class="col font-family-promp-regular">
+                        <ul style="margin-left: 0 !important; padding: 0 !important;">
+                            <li class="footer font-family-promp-regular_bold">Corporate Information</li>
+                            <li class="footer text-white-50">Technology</li>
+                            <li class="footer text-white-50">Dealer Apps</li>
+                            <li class="footer text-white-50">Toyota Let's Go Beyond</li>
+                        </ul>
+                    </div>
+                    <div class="col font-family-promp-regular">
+                        <ul style="margin-left: 0 !important; padding: 0 !important;">
+                            <li class="footer text-white-50">Toyota Genuine Accessories</li>
+                            <li class="footer text-white-50">Dealer Careers</li>
+                            <li class="footer text-white-50">Start Your Imposible</li>
+                            <li class="footer text-white-50">Motorsport</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-wrap text-white-50 pt-3 pb-3">
+            <div class="col">
+                <ul class="footer">
+                    <li class="footer">
+                        <a href="#">Privacy Policy |</a>
+                    </li>
+                    <li class="footer">
+                        <a href="#">Legal Cookie |</a>
+                    </li>
+                    <li class="footer">
+                        <a href="#"> Contact Us</a>
+                    </li>
+                </ul>
+                <small class="fz-x-small">
+                    ©2022 Toyota Astra Motor <br>
+                    All information applies to Indonesia vehicles only
+                </small>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-menu">
+        <a href="#"><img src="assets/tag-desktop.png" alt="halo toyota"></a>
+    </div>
 
     <!-- begin script -->
     <script src="vendor/bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
