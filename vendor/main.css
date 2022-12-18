@@ -47,10 +47,15 @@
     --my-danger: #dc3545;
     --my-light: #f8f9fa;
     --my-dark: #212529;
+    --my-blue: #428bca;
 }
 
 .bg-primary {
     background: var(--my-primary) !important;
+}
+
+.bg-blue {
+    background: var(--my-blue);
 }
 
 .bg-success {
@@ -80,6 +85,10 @@
 
 .bg-white-50 {
     background: #f4f4f4;
+}
+
+.bg-white-80 {
+    background: #E7E7E7;
 }
 
 .font-family-promp-regular_semi_bold {
@@ -120,15 +129,25 @@ li.min-width-70:hover {
     margin-top: 65px !important;
 }
 
-.hero-bg {
-    background-image: url('https://rajamobil.s3-ap-southeast-1.amazonaws.com/custom_dealer/banner/top_banner_gallery.jpg') !important;
+.bg-image-sejarah,
+.bg-image-visi-misi {
     background-size: cover;
     background-position: center;
-    height: 300px;
+}
+
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 340px;
 }
 
 .w-30 {
     height: 30vh;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 body {
@@ -171,6 +190,7 @@ body {
     color: #e53232;
 }
 
+.gallery-wrap,
 .footer-wrap,
 .car-catalog {
     padding: 0 120px;
@@ -182,11 +202,119 @@ body {
 }
 
 /*************************************
+# JQUERY LIGHTBOX
+**************************************/
+#preview-gallery {
+    width: 260px;
+    height: 150px;
+    margin: 5px 0 0 0;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.sl-close,
+.sl-next,
+.sl-prev,
+.sl-counter {
+    color: rgb(205, 205, 205) !important;
+}
+
+.sl-wrapper {
+    background: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1220px) {
+    #preview-gallery {
+        margin: 2px 0;
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gallery-wrap {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #preview-gallery {
+        margin: 2px 0;
+        width: 220px;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+
+/*************************************
+# RADIO BUTTON
+**************************************/
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked+label:before {
+    border: 2px solid #428bca;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #428bca;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*************************************
 # NAVBAR
 **************************************/
 .site-navbar {
     margin-bottom: 0px;
-    z-index: 1999;
+    z-index: 999;
     position: absolute;
     top: 0;
     width: 100%;
@@ -856,7 +984,7 @@ li.footer img {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 999999;
+    z-index: 999;
     box-shadow: 0px 0px 4px rgb(0 0 0 / 60%);
     border-radius: 20px;
 }
@@ -1041,6 +1169,7 @@ li.li-item:hover {
 
 @media screen and (max-width: 1150px) {
 
+    .gallery-wrap,
     .footer-wrap,
     .car-catalog {
         padding: 0 25px;

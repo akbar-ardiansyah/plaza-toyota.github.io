@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="vendor/main.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!-- jquery lightbox -->
-    <link rel="stylesheet" href="vendor/jquery-lightbox/dist/simple-lightbox.css" />
 </head>
 
 <body>
@@ -175,7 +173,8 @@
     </header>
     <!-- END NAVBAR -->
     <main class="mt-6">
-        <div class="hero-bg" background="assets/top_banner_gallery.jpg">
+        <div class="hero-bg" background="assets/New-Banner-Web-toyotaho-KONSULTASI-PEMBELIAN.jpg"
+            style="margin-top: 0 !important;">
             <!-- BEGIN BREATCRUMB -->
             <nav class="bg-white-80"
                 style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
@@ -184,41 +183,207 @@
                     <ol class="breadcrumb pt-2 pb-2">
                         <li class="breadcrumb-item">Home</li>
                         <li class="breadcrumb-item active" aria-current="page">Dealer Identity</li>
-                        <li class="breadcrumb-item active">Album Gallery</li>
+                        <li class="breadcrumb-item active">Konsultasi Pembelian</li>
                     </ol>
                 </div>
             </nav>
             <!-- END BREATCRUMB -->
-            <div class="footer-wrap container w-30">
-                <div class="h1 font-family-promp-regular_bold text-white pt-5">Toyota Head Office Gallery</div>
-            </div>
         </div>
     </main>
     <!-- BEGIN CONTENT -->
-
-    <div class="container gallery-wrap mt-5 mb-5">
-        <div class="h4 font-family-promp-regular_bold text-decoration-underline mb-3">Image</div>
-        <div class="row justify-content-center mx-auto">
-            <div class="gallery text-center">
-                <a href="assets/img/1.jpg"><img src="assets/img/1.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/3.jpg"><img src="assets/img/3.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/2.jpg"><img src="assets/img/2.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/7.jpg"><img src="assets/img/7.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/4.jpg"><img src="assets/img/4.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/1.jpg"><img src="assets/img/1.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/2.jpg"><img src="assets/img/2.jpg" id="preview-gallery" alt="asd" /></a>
-                <a href="assets/img/2.jpg"><img src="assets/img/2.jpg" id="preview-gallery" alt="asd" /></a>
-                <div class="clear"></div>
+    <div class="container footer-wrap mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="text-justify p-3">
+                    <div class="font-family-promp-regular_semi_bold h4">Konsultasi Pembelian</div>
+                    <div class="font-family-promp-regular fz-x-small">Masukan pertanyaan seputar konsultasi pembelian
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="text-center mt-5">
-            <button class="btn btn-transparent rounded-pill text-dark">Load More</button>
-        </div>
-        <div class="h4 font-family-promp-regular_bold text-decoration-underline">Video</div>
+        <form>
+            <div class="row p-3 font-family-promp-regular">
+                <div class="col-md-12 col-sm-12">
+                    <label for="kebutuhan" class="h5">Kebutuhan</label>
+                    <div class="form-group">
+                        <div class="custom-radio custom-control-inline">
+                            <input type="radio" id="konsul-individu" name="konsul-kebutuhan" value="1" required=""
+                                checked="">
+                            <label class="custom-control-label konsul-label" for="konsul-individu">Individu</label>
+                        </div>
+                        <div class="custom-radio custom-control-inline">
+                            <input type="radio" id="konsul-fleet" name="konsul-kebutuhan" value="2" required="">
+                            <label class="custom-control-label konsul-label" for="konsul-fleet">Fleet</label>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-6 col-sm-6">
+                    <div class="left-konsultasi">
+                        <div>
+                            <h4 class="h5">Rencana Pembelian</h4>
+                            <div class="form-group">
+                                <div class="custom-radio">
+                                    <input type="radio" id="konsul-beli" name="informasi" value="3" required="">
+                                    <label class="custom-control-label konsul-label" for="konsul-beli">Dalam 1-2
+                                        bulan</label>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="konsul-infopromo" name="informasi" value="2" required="">
+                                    <label class="custom-control-label konsul-label" for="konsul-infopromo">Dalam
+                                        1-2 minggu ini</label>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="konsul-infoproduct" name="informasi" value="1" required="">
+                                    <label class="custom-control-label konsul-label" for="konsul-infoproduct">Dalam
+                                        minggu ini</label>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" id="konsul-drive" name="informasi" value="5" required="">
+                                    <label class="custom-control-label konsul-label" for="konsul-drive">Booking Test
+                                        Drive</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div id="datapribadi">
+                        <h4 class="h4">Informasi Data Pribadi</h4>
+                        <div class="mb-3">
+                            <label for="konsul-nama">Nama*</label>
+                            <input type="text" name="konsul-nama" class="form-control" id="konsul-nama" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-alamat">Alamat</label>
+                            <textarea name="konsul-alamat" id="konsul-alamat" cols="30" rows="3"
+                                class="form-control"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-nohp">No Handphone*</label>
+                            <input type="text" name="konsul-nohp" class="form-control" id="konsul-nohp" required=""
+                                onkeypress="return hanyaAngka(event)" maxlength="13" minlength="10">
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-email">Email*</label>
+                            <input type="email" name="konsul-email" class="form-control" id="konsul-email" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-dealer">Dealer</label>
+                            <select name="konsul-dealer" id="konsul-dealer" class="form-control" required="">
+                                <option value="">Dealer*</option>
+                                <option value="73" data-client="99702" data-city="3">Plaza Toyota Pemuda</option>
+                                <option value="124" data-client="41885" data-city="2">Plaza Toyota Green Garden
+                                </option>
+                                <option value="126" data-client="27699" data-city="1">Plaza Toyota Tendean</option>
+                                <option value="127" data-client="41854" data-city="2">Plaza Toyota Kyai Tapa Grogol
+                                </option>
+                                <option value="133" data-client="41875" data-city="6">Plaza Toyota Gading Serpong
+                                </option>
+                                <option value="172" data-client="41886" data-city="60">Plaza Toyota Bandung</option>
+                                <option value="862" data-client="50466" data-city="9">Plaza Toyota Citeureup
+                                </option>
+                                <option value="3050" data-client="125899" data-city="9">Plaza Toyota Body &amp;
+                                    Paint</option>
+                            </select>
+                            <input type="hidden" name="konsul-city-dealer" id="konsul-city-dealer">
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-product">Product</label>
+                            <select name="konsul-product" id="konsul-product" class="form-control selecModel"
+                                required="">
+                                <option value="">Product*</option>
+                                <option value="" data-model-name="" data-merek-name="TOYOTA"></option>
+                                <option value="1259" data-model-name="All New Avanza" data-merek-name="TOYOTA">All
+                                    New Avanza</option>
+                                <option value="1294" data-model-name="All New BZ4X" data-merek-name="TOYOTA">All New
+                                    BZ4X</option>
+                                <option value="1205" data-model-name="All New Corolla Cross Hybrid"
+                                    data-merek-name="TOYOTA">All New Corolla Cross Hybrid</option>
+                                <option value="488" data-model-name="All New GR 86" data-merek-name="TOYOTA">All New
+                                    GR 86</option>
+                                <option value="1295" data-model-name="All New Kijang Innova Zenix"
+                                    data-merek-name="TOYOTA">All New Kijang Innova Zenix</option>
+                                <option value="1296" data-model-name="All New Kijang Innova Zenix EV"
+                                    data-merek-name="TOYOTA">All New Kijang Innova Zenix EV</option>
+                                <option value="319" data-model-name="All New Land Cruiser" data-merek-name="TOYOTA">
+                                    All New Land Cruiser</option>
+                                <option value="1235" data-model-name="All New Raize" data-merek-name="TOYOTA">All
+                                    New Raize</option>
+                                <option value="1260" data-model-name="All New Veloz" data-merek-name="TOYOTA">All
+                                    New Veloz</option>
+                                <option value="204" data-model-name="All New Vios" data-merek-name="TOYOTA">All New
+                                    Vios</option>
+                                <option value="687" data-model-name="All New Voxy" data-merek-name="TOYOTA">All New
+                                    Voxy</option>
+                                <option value="681" data-model-name="New Agya" data-merek-name="TOYOTA">New Agya
+                                </option>
+                                <option value="1245" data-model-name="New Agya GR Sport" data-merek-name="TOYOTA">
+                                    New Agya GR Sport</option>
+                                <option value="191" data-model-name="New Alphard" data-merek-name="TOYOTA">New
+                                    Alphard</option>
+                                <option value="1123" data-model-name="New Calya" data-merek-name="TOYOTA">New Calya
+                                </option>
+                                <option value="193" data-model-name="New Camry" data-merek-name="TOYOTA">New Camry
+                                </option>
+                                <option value="194" data-model-name="New Corolla Altis" data-merek-name="TOYOTA">New
+                                    Corolla Altis</option>
+                                <option value="1104" data-model-name="New Fortuner" data-merek-name="TOYOTA">New
+                                    Fortuner</option>
+                                <option value="1272" data-model-name="New HIace Commuter" data-merek-name="TOYOTA">
+                                    New HIace Commuter</option>
+                                <option value="1273" data-model-name="New HIace Premio" data-merek-name="TOYOTA">New
+                                    HIace Premio</option>
+                                <option value="1210" data-model-name="New Hilux D Cab" data-merek-name="TOYOTA">New
+                                    Hilux D Cab</option>
+                                <option value="1297" data-model-name="New Hilux GR Sport" data-merek-name="TOYOTA">
+                                    New Hilux GR Sport</option>
+                                <option value="1213" data-model-name="New Hilux S Cab" data-merek-name="TOYOTA">New
+                                    Hilux S Cab</option>
+                                <option value="1093" data-model-name="New Kijang Innova" data-merek-name="TOYOTA">
+                                    New Kijang Innova</option>
+                                <option value="1146" data-model-name="New Rush" data-merek-name="TOYOTA">New Rush
+                                </option>
+                                <option value="1112" data-model-name="New Sienta" data-merek-name="TOYOTA">New
+                                    Sienta</option>
+                                <option value="203" data-model-name="New Vellfire" data-merek-name="TOYOTA">New
+                                    Vellfire</option>
+                                <option value="1215" data-model-name="New Venturer" data-merek-name="TOYOTA">New
+                                    Venturer</option>
+                                <option value="205" data-model-name="New Yaris" data-merek-name="TOYOTA">New Yaris
+                                </option>
+                            </select>
+                            <input type="hidden" name="konsul-merek-name" id="merek_name">
+                            <input type="hidden" name="konsul-model-name" id="model_name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-producttype">Product Type</label>
+                            <select name="konsul-producttype" id="konsul-producttype" class="form-control carType">
+                                <option value="">Product Type</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsul-pertanyaan">Pertanyaan</label>
+                            <textarea name="konsul-pertanyaan" id="konsul-pertanyaan" cols="30" rows="4"
+                                class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h4 class="h4">Catatan</h4>
+                        <p>Saya mengizinkan Toyota dan mitranya untuk menghubungi Saya dalam membantu proses
+                            pembelian mobil Toyota. Dengan memberikan email dan no handphone, saya telah menyetujui
+                            untuk menerima semua pemberitahuan melalui Toyota.</p>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#"
+                            class="btn bg-blue rounded-pill pt-1 pb-1 fw-bold text-white font-family-promp-regular_semi_bold fz-x-small">Submit</a>
+                        <input type="reset" name="RESET" value="Reset"
+                            class="btn bg-secondary rounded-pill pt-1 pb-1 fw-bold text-white font-family-promp-regular_semi_bold fz-x-small">
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-
-
     <!-- END CONTENT -->
 
     <!-- FOOTER -->
@@ -229,7 +394,8 @@
                     <h6 class="font-family-promp-regular_bold">Contact Us</h6>
                     <strong class="font-family-promp-regular_semi_bold">Plaza Toyota</strong><br>
                     <small class="font-family-promp-regular fz-x-small">
-                        Jl. Kapten Tendean No.9A, RT.1/RW.2, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta Selatan,
+                        Jl. Kapten Tendean No.9A, RT.1/RW.2, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta
+                        Selatan,
                         Daerah
                         Khusus Ibukota Jakarta 12710, Indonesia</small>
                 </div>
@@ -334,7 +500,6 @@
     <!-- begin script -->
     <script src="vendor/bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery-lightbox/dist/simple-lightbox.min.js"></script>
     <script src="vendor/main.js"></script>
 </body>
 
