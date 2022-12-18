@@ -84,6 +84,11 @@
         // hero background
         var bg = $('.hero-bg').attr('background');
         $('.hero-bg').css('background-image', 'url(' + bg + ')')
+        // with blur
+        var bg = $('.hero-bg-blur').attr('background');
+        $('.hero-bg-blur').css({
+            'background': 'url(' + bg + ')'
+        })
 
         // about us background
         var bgSejarah = $('.bg-image-sejarah').attr('data-background');
