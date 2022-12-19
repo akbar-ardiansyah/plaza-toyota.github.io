@@ -285,6 +285,11 @@
     width: 100%;
   }
 
+  .navbar ul li:first-child {
+    list-style: none;
+    border: none;
+  }
+
   .navbar ul li {
     list-style: none;
     border: 1px solid #dcdbdb;

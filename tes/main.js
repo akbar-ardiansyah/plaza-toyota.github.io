@@ -1,29 +1,3 @@
-$(document).ready(function () {
-
-  // hero background
-  var bg = $('.hero-bg').attr('background');
-  $('.hero-bg').css('background-image', 'url(' + bg + ')')
-  // with blur
-  var bg = $('.hero-bg-blur').attr('background');
-  $('.hero-bg-blur').css({
-    'background': 'url(' + bg + ')'
-  })
-
-  // about us background
-  var bgSejarah = $('.bg-image-sejarah').attr('data-background');
-  $('.bg-image-sejarah').css('background-image', 'url(' + bgSejarah + ')')
-  // about us background
-  var bgVisiMisi = $('.bg-image-visi-misi').attr('data-background');
-  $('.bg-image-visi-misi').css('background-image', 'url(' + bgVisiMisi + ')')
-
-  // jquery lighbox
-  let $gallery = new SimpleLightbox('.gallery a', {
-    scrollZoom: true,
-    overlayOpacity: 1.0,
-  });
-
-})
-
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
   /**

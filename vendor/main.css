@@ -290,6 +290,11 @@
         border: 1px solid #dcdbdb;
     }
 
+    .navbar ul li:first-child {
+        list-style: none;
+        border: none;
+    }
+
     ul.dropdown-active li {
         list-style: none;
         border: none;
@@ -368,7 +373,9 @@
         right: 20px;
     }
 
+    .mobile-nav-toggle.fa-times,
     .mobile-nav-toggle.fa-bars {
+        font-size: 30px;
         color: #252525;
     }
 
