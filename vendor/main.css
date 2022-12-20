@@ -990,8 +990,8 @@ li.li-item:hover {
 @media screen and (max-width: 400px) {
     #preview-gallery {
         margin: 1px 0 !important;
-        width: 100% !important;
-        height: 220px !important;
+        width: 49% !important;
+        height: 150px !important;
         object-fit: cover !important;
     }
 
