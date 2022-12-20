@@ -309,7 +309,7 @@
         font-family: 'Prompt_SemiBold';
         position: absolute;
         inset: 0;
-        padding: 100px 50px;
+        padding: 100px 15px;
         margin: 0;
         background: #fff;
         overflow-y: auto;
