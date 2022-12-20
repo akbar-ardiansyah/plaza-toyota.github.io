@@ -625,7 +625,7 @@ iframe {
 }
 
 .gallery-wrap,
-.footer-wrap,
+.container-wrap,
 .car-catalog {
     padding: 0 120px;
 }
@@ -1061,7 +1061,7 @@ li.li-item:hover {
 @media screen and (max-width: 1150px) {
 
     .gallery-wrap,
-    .footer-wrap,
+    .container-wrap,
     .car-catalog {
         padding: 0 25px;
     }
@@ -1074,6 +1074,10 @@ li.li-item:hover {
 @media screen and (max-width: 750px) {
     .car-catalog {
         padding: 0 18px;
+    }
+
+    .fz-sm-15 {
+        font-size: 12px;
     }
 
     .car-catalog h4 {
