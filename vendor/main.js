@@ -118,7 +118,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     });
-
+    // floating menu hide/show scrolling bt100
+    const floatingMenu = document.querySelector('.floating-menu');
+    if (floatingMenu) {
+        document.addEventListener('scroll', () => {
+            window.scrollY > 100 ? floatingMenu.classList.remove('d-none') : floatingMenu.classList.add('d-none');
+        });
+    }
 
 });
 
