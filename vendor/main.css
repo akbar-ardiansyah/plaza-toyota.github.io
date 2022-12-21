@@ -455,21 +455,26 @@ iframe {
     }
 
     .navbar .megamenu ul {
-        left: 0;
-        right: 0;
+        /* left: 0;
+        right: 0; */
         padding: 30px 4px 10px 4px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        /* min-width: 1200px; */
     }
 
     .navbar .megamenu ul li {
-        display: flex;
+        padding: 12px;
+        text-align: center;
+        /* display: flex; */
         /* display: list-item; */
-        display: inline-block;
     }
 
     .navbar .megamenu ul a,
     .navbar .megamenu ul li a,
     .navbar .megamenu ul li:hover>a {
+        font-size: 12px;
         color: #262626;
         background: none;
     }
@@ -632,7 +637,7 @@ iframe {
         content: "";
         position: fixed;
         inset: 0;
-        background: rgba(var(--color-secondary-rgb), 0.8);
+        background: rgba(255, 0, 0, 0.568)a(255, 0, 0, 0.568);
         z-index: 9996;
     }
 }
