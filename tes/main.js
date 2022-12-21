@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Sticky header on scroll
    */
+  // const tes = document.querySelector('.showa');
+  // document.addEventListener('click', () => {
+  //   tes.classList.remove('showa')
+  // });
+
+
+
   const selectHeader = document.querySelector('#header');
   if (selectHeader) {
     document.addEventListener('scroll', () => {
@@ -122,4 +129,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
 
