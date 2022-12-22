@@ -126,11 +126,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // var bg = $('.hero-bg').attr('background');
+    // $('.hero-bg').css('background-image', 'url(' + bg + ')')
+
+    // jquery lighbox
+    let $gallery = new SimpleLightbox('.gallery a', {
+        scrollZoom: true,
+        overlayOpacity: 1.0,
+    });
 });
 
 
 $(document).ready(function () {
-
     // hero background
     var bg = $('.hero-bg').attr('background');
     $('.hero-bg').css('background-image', 'url(' + bg + ')')
@@ -147,10 +154,6 @@ $(document).ready(function () {
     var bgVisiMisi = $('.bg-image-visi-misi').attr('data-background');
     $('.bg-image-visi-misi').css('background-image', 'url(' + bgVisiMisi + ')')
 
-    // jquery lighbox
-    let $gallery = new SimpleLightbox('.gallery a', {
-        scrollZoom: true,
-        overlayOpacity: 1.0,
-    });
+
 
 })
