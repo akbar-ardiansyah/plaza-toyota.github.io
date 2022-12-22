@@ -411,7 +411,7 @@ iframe {
         right: 0;
         top: 100%;
         margin: 0;
-        padding: 0 0 10px 0;
+        padding: 0;
         z-index: 9999;
         opacity: 0;
         visibility: hidden;
@@ -420,9 +420,15 @@ iframe {
     }
 
     .navbar .dropdown ul li {
+        text-align: center;
         margin: 10px 0;
-        border-right: 0.5px solid #252525d0;
-        border-left: 0.5px solid #252525d0;
+        min-width: 180px;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    .navbar .dropdown ul li:last-child {
+        border-right: 1px solid #ccc !important;
     }
 
     .navbar .dropdown ul a {
@@ -448,6 +454,7 @@ iframe {
     .navbar .dropdown:hover>ul {
         opacity: 1;
         visibility: visible;
+        padding: 50px 30px;
     }
 
     .navbar .megamenu {
@@ -457,7 +464,7 @@ iframe {
     .navbar .megamenu ul {
         /* left: 0;
         right: 0; */
-        padding: 30px 4px 10px 4px;
+        /* padding: 30px 4px 10px 4px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: stretch;
@@ -474,8 +481,10 @@ iframe {
     .navbar .megamenu ul a,
     .navbar .megamenu ul li a,
     .navbar .megamenu ul li:hover>a {
+        font-family: 'Prompt_Regular';
         font-size: 12px;
         color: #262626;
+        font-weight: normal;
         background: none;
     }
 
@@ -533,10 +542,6 @@ iframe {
         border: 1px solid #dcdbdb;
     }
 
-    .navbar ul li:first-child {
-        list-style: none;
-        border: none;
-    }
 
     ul.dropdown-active li {
         list-style: none;
@@ -544,6 +549,11 @@ iframe {
     }
 
     .navbar ul:first-child {
+        list-style: none;
+        border: none;
+    }
+
+    .navbar li:nth-child(2) {
         list-style: none;
         border: none;
     }
@@ -620,6 +630,8 @@ iframe {
     .mobile-nav-toggle.fa-bars {
         font-size: 30px;
         color: #252525;
+        /* transition: all 0.9s ease-in; */
+
     }
 
     .mobile-nav-active {
@@ -640,6 +652,7 @@ iframe {
         background: rgba(0, 0, 0, 0.204);
         backdrop-filter: blur(5px);
         z-index: 9996;
+        /* transition: all 1s ease; */
     }
 }
 
